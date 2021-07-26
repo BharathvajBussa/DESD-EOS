@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"declaration.h"
+#include"arith.h"
 
 int main()
 {

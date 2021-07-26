@@ -1,4 +1,4 @@
-#include"declaration.h"
+#include"arith.h"
 
 int sub(int a,int b)
 {

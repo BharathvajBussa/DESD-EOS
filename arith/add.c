@@ -1,4 +1,4 @@
-#include"declaration.h"
+#include"arith.h"
 
 int add(int a,int b)
 {
