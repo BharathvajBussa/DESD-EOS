@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>
-int count;
+int count=0;
 pthread_rwlock_t rwlock;
 
 void *calib(void *data)
 {
     while(1)
     {   
+        sleep(2);
         printf("calib asking for lock\n");
         pthread_rwlock_wrlock(&rwlock);
         printf("calib got lock\n");
-        sleep(2);
         count++;
         printf("calib:%d\n",count);
         pthread_rwlock_unlock(&rwlock);
