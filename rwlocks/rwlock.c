@@ -48,6 +48,7 @@ void *display(void *data)
 int main()
 {
     pthread_t cid,rid,did;
+    pthread_rwlock_init(&rwlock,NULL);
     pthread_create(&cid,NULL,calib,NULL);
     pthread_create(&rid,NULL,reading,NULL);
     pthread_create(&did,NULL,display,NULL);
